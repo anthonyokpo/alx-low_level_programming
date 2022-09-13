@@ -7,14 +7,6 @@
 
 int main(void)
 {
-	char *sh = "main";
-
-	while (*sh)
-	{
-		_putchar(*sh);
-		sh++;
-	}
-	_putchar('\n');
-
+	print_putchar();
 	return (0);
 }
