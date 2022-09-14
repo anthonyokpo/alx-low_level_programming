@@ -1,20 +1,17 @@
 #include "main.h"
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
+* main - Entry point
+* Description: "Print a string in stdout"
+* Return: Always 0 (Success)
+*/
 
 int main(void)
 {
-	char *sh = "main";
+	char c[] = "_putchar";
+	int i;
 
-	while (*sh)
-	{
-		_putchar(*sh);
-		sh++;
-	}
+	for (i = 0; i < 8; i++)
+		_putchar(c[i]);
 	_putchar('\n');
-
 	return (0);
 }
