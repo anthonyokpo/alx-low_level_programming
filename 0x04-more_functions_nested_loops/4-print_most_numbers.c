@@ -19,10 +19,10 @@ void print_most_numbers(void)
 		}
 		else
 		{
-			putchar(z + '0');
+			_putchar(z + '0');
 		}
 	}
 
-	putchar('\n');
+	_putchar('\n');
 
 }
