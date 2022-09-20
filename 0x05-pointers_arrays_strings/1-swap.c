@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * swap_int - check the code
@@ -9,9 +10,9 @@
 
 void swap_int(int *a, int *b)
 {
-	int swap;
+	int x;
 
-	swap = *a;
+	x = *a;
 	*a = *b;
-	*b = swap;
+	*b = x;
 }
