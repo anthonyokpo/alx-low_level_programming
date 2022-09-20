@@ -5,6 +5,8 @@
  * @n: pointer to modify
  * Return: void
  */
+
+
 void reset_to_98(int *n)
 {
 	*n = 98;
