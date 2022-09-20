@@ -1,6 +1,3 @@
-#include "main.h"
-#include <stdio.h>
-
 /**
  * _strlen - check the code
  * @s: pointer variable.
