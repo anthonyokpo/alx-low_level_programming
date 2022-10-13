@@ -1,48 +1,36 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * print - print opcodes of the program
- * @a: the address
- * @n: number of bytes
- * Return: void
+ * main - generates opcodes.
+ * @argc: argument counter.
+ * @argv: argument vector.
+ * Return: the opcodes
  */
 
-void print(char *a, int n)
+int main(int argc, char **argv)
 {
-	int i = 0;
-
-	for (; i < n; i++)
-	{
-		printf("%.2hhx", a[i]);
-		if (i < n - 1)
-			printf(" ");
-	}
-	printf("\n");
-}
-
-/**
- * main - prints the opcodes of its own main function
- * @ac: arg counter
- * @av: arg vector
- * Return: 0
- */
-
-int main(int argc, char *argv[])
-{
-	int i;
+	int i, number;
 
 	if (argc != 2)
 	{
 		printf("Error\n");
-		exit(1);
+		return (1);
 	}
-	i = atoi(av[1]);
-	if (i < 0)
+	number = atoi(argv[1]);
+	if (number < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
-	print((char *)&main, i);
+
+	for (i = 0; i < number; i++)
+	{
+		printf("%02hhx", ((char *)main)[i]);
+		if (i == (number - 1))
+			printf("\n");
+		else
+			printf(" ");
+	}
 	return (0);
 }
